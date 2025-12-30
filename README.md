@@ -1,9 +1,7 @@
 # Nt_Utilities
 
-There are two scripts here.
-
-Nt_Utilities - contains working exports to use.
-
+There are two scripts here.  
+Nt_Utilities - contains working exports to use.  
 Nt_Utilities_Test - contains working example code to use/modify.
 
 ## Description
