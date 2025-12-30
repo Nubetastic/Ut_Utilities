@@ -5,7 +5,8 @@ Ut_Utilities - contains working exports to use.
 Ut_Utilities_Test - contains working example code to use/modify.
 
 ## Description
-Utilities are a custom exports I made for my scripts that I am sharing to help others.
+Utilities are custom exports I made for my scripts that I am sharing to help others.
+
 One of the key features is how relationship groups are being used.
 Ped relationship groups assign blips to npcs, fully client side. No need to sync netID's or any other data.
 Ped relationship groups also handel all combat with one native command. TaskCombatHatedTargets(ped)
