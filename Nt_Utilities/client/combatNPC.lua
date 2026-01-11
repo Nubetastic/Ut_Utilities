@@ -53,7 +53,6 @@ exports('SpawnCombatNPC', function(args)
         SetNetworkIdExistsOnAllMachines(netId, true)
         newArgs.netId = netId
     end
-
     -- setup outfit.
     if args.outfit ~= nil then
         EquipMetaPedOutfitPreset(npc, args.outfit, true)

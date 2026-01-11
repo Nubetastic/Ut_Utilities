@@ -660,14 +660,14 @@ local function ManageNPC(ped, sightRange, hearingRange, combatRange, groupHash, 
                     
                     local detected = false
                     
-                    if HasEntityClearLosToEntityInFront(ped, targetPed, Config.CombatAI.Detection.SightRangeCheck) and distance <= sightRange then
+                    if HasEntityClearLosToEntityInFront(ped, targetPed, sightRange) and distance <= sightRange then
                         detected = true
                     end
                     
                     if not detected then
                         local targetSpeed = GetEntitySpeed(targetPed)
-                        if HasEntityClearLosToEntity(ped, targetPed, Config.CombatAI.Detection.HearingRangeCheck) and distance <= hearingRange then
-                            if distance <= (hearingRange * Config.CombatAI.Detection.CloseProximityMultiplier) and targetSpeed > Config.CombatAI.Detection.CloseProximitySpeedThreshold then
+                        if HasEntityClearLosToEntity(ped, targetPed, hearingRange) and distance <= hearingRange then
+                            if distance <= hearingRange and targetSpeed > Config.CombatAI.Detection.CloseProximitySpeedThreshold then
                                 detected = true
                             elseif targetSpeed > Config.CombatAI.Detection.StandardSpeedThreshold and distance <= hearingRange then
                                 detected = true

@@ -2,7 +2,6 @@ local cachedEnemyPed = nil
 
 local function SpawnEnemyNPC(coords)
     if cachedEnemyPed and DoesEntityExist(cachedEnemyPed) then
-        StopCombatAI(cachedEnemyPed)
         DeleteEntity(cachedEnemyPed)
     end
 
@@ -21,6 +20,7 @@ local function SpawnEnemyNPC(coords)
     exports['Nt_Utilities']:giveWeaponToNPC(ped, 'Sidearm', ConfigEnemySpawn.Settings.Sidearm, true)
 
     TaskCombatHatedTargets(ped)
+
 end
 
 

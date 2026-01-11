@@ -12,7 +12,7 @@ ConfigFriendlyNPC.NPCs = {
         model = 'U_M_M_VALBUTCHER_01',
         coords = vector4(-339.26, 767.7, 116.57, 103.16),
         scenario = "Table",
-        scenarioCoords = false,
+        scenarioCoords = vector4(-339.26, 767.7, 115.57, 103.16),
     },
     ["Valentine_Sheriff"] ={
         model = 'cs_valsheriff',
